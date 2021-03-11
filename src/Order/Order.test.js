@@ -14,8 +14,8 @@ describe('Order.js', () => {
     getDate.mockReturnValue('11 марта, чт, 2021 год');
   });
 
-  afterAll(() => {
-    jest.clearAllMocks();
+  afterEach(() => {
+    jest.resetModules()
   });
 
   it('default render', () => {
